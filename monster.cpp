@@ -34,16 +34,15 @@ void monster::Update()
 	jump:
 	switch (dir)
 	{
-	case Direction::N0: pos.y--;			 break;
-	case Direction::NE:	pos.x += 2; pos.y--; break;
-	case Direction::E0:	pos.x += 2;			 break;
-	case Direction::SE:	pos.x += 2; pos.y++; break;
-	case Direction::S0:	pos.y++;			 break;
-	case Direction::SW:	pos.x -= 2; pos.y++; break;
-	case Direction::W0:	pos.x -= 2;			 break;
-	case Direction::NW:	pos.x -= 2; pos.y--; break;
-	default:
-		break;
+	case Direction::N0: pos.y--;		 break;
+	case Direction::NE: pos.x += 2; pos.y--; break;
+	case Direction::E0: pos.x += 2;		 break;
+	case Direction::SE: pos.x += 2; pos.y++; break;
+	case Direction::S0: pos.y++;	     	 break;
+	case Direction::SW: pos.x -= 2; pos.y++; break;
+	case Direction::W0: pos.x -= 2;	      	 break;
+	case Direction::NW: pos.x -= 2; pos.y--; break;
+	default:break;
 	}
 
 	bool bCheck = false;
